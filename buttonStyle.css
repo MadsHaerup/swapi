@@ -15,21 +15,25 @@
 }
 
 .lightsaber {
-    rotate: 90deg;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .lightsaber button {
     cursor: pointer;
-    /*position: absolute;
-    bottom: 0;
-    left: 0;*/
     width: 15px;
     height: 50px;
     border-bottom: solid 4px grey;
     border-top: solid 5px grey;
     border-radius: 5px;
-    background: rgb(226, 226, 226);
     background: linear-gradient(to right, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+    -webkit-border-radius: 5px;
+    background: linear-gradient(to right, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+    /* W3C */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(226, 226, 226, 1)), color-stop(50%, rgba(219, 219, 219, 1)), color-stop(51%, rgba(209, 209, 209, 1)), color-stop(100%, rgba(254, 254, 254, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
 }
 
 .plasma {
@@ -42,19 +46,43 @@
     display: block;
     filter: blur(1px);
     height: 28vw;
+    -webkit-transition: height 300ms;
+    -webkit-filter: blur(1px);
 }
 
 .yoda {
+    background: rgb(135, 220, 90);
+    /* Old browsers */
     background: linear-gradient(to right, rgb(135, 220, 90) 0%, rgb(254, 254, 254) 30%, rgb(254, 254, 254) 50%, rgb(254, 254, 254) 70%, rgb(135, 220, 90) 100%);
+    /* W3C */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgb(135, 220, 90)), color-stop(30%, rgb(254, 254, 254)), color-stop(50%, rgb(254, 254, 254)), color-stop(70%, rgb(254, 254, 254)), color-stop(100%, rgb(135, 220, 90)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgb(135, 220, 90) 0%, rgb(254, 254, 254) 30%, rgb(254, 254, 254) 50%, rgb(254, 254, 254) 70%, rgb(135, 220, 90) 100%);
+    /* Chrome10+,Safari5.1+ */
     animation-name: yoda;
+    -webkit-animation-name: yoda;
     animation-duration: 2s;
+    -webkit-animation-duration: 2s;
     animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
 }
 
 
 /* Animations */
 
 @keyframes yoda {
+    from {
+        box-shadow: 0 0 10px #7EC855;
+    }
+    50% {
+        box-shadow: 0 0 16px #7EC855;
+    }
+    to {
+        box-shadow: 0 0 10px #7EC855;
+    }
+}
+
+@-webkit-keyframes yoda {
     from {
         box-shadow: 0 0 10px #7EC855;
     }
