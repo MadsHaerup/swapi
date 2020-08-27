@@ -1,3 +1,71 @@
 #listDetail {
     display: none;
 }
+
+body {
+    background: linear-gradient(to right, #000000, #434343);
+    font-family: 'Orbitron', sans-serif;
+}
+
+main.frontPage,
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+main {
+    grid-template-columns: 1fr;
+}
+
+ol {
+    place-self: center;
+    color: rgba(59, 118, 160, 0.97);
+    grid-column: 1/-1;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+h1,
+.frontPage__headline {
+    -webkit-text-stroke: 1px yellow;
+    font-size: 5vw;
+    place-self: center;
+    grid-column: 1/-1;
+}
+
+.frontPage__headline {
+    font-size: 8vw;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.details {
+    color: rgba(59, 118, 160, 0.97);
+    list-style: none;
+}
+
+#personDetails {
+    margin: 0 auto;
+    background: linear-gradient(to right, #233530, #434343);
+    box-shadow: -1px 15px 30px -12px black;
+    padding: 4em;
+    border-radius: 20px;
+    height: 50vh;
+    border: 5px solid black;
+    display: grid;
+}
+
+li span {
+    color: yellow;
+}
+
+
+/* ──────────────────────────────────────────────────────────────────────────────── */

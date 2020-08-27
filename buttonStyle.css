@@ -1,0 +1,67 @@
+/*body {
+    background: #333;
+    color: #fff;
+    font-family: arial;
+}*/
+
+.example-item {
+    /*display: flex;
+    justify-content: center;
+    margin-top: 20em;*/
+    place-self: start;
+    margin-right: 50vh;
+    grid-column: 2/-1;
+    padding-left: 2em;
+}
+
+.lightsaber {
+    rotate: 90deg;
+}
+
+.lightsaber button {
+    cursor: pointer;
+    /*position: absolute;
+    bottom: 0;
+    left: 0;*/
+    width: 15px;
+    height: 50px;
+    border-bottom: solid 4px grey;
+    border-top: solid 5px grey;
+    border-radius: 5px;
+    background: rgb(226, 226, 226);
+    background: linear-gradient(to right, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+}
+
+.plasma {
+    transition: height 300ms, ;
+    border-radius: 12px 12px 0 0;
+    position: absolute;
+    bottom: 55px;
+    left: 3px;
+    width: 10px;
+    display: block;
+    filter: blur(1px);
+    height: 28vw;
+}
+
+.yoda {
+    background: linear-gradient(to right, rgb(135, 220, 90) 0%, rgb(254, 254, 254) 30%, rgb(254, 254, 254) 50%, rgb(254, 254, 254) 70%, rgb(135, 220, 90) 100%);
+    animation-name: yoda;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+/* Animations */
+
+@keyframes yoda {
+    from {
+        box-shadow: 0 0 10px #7EC855;
+    }
+    50% {
+        box-shadow: 0 0 16px #7EC855;
+    }
+    to {
+        box-shadow: 0 0 10px #7EC855;
+    }
+}
