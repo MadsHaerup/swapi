@@ -28,7 +28,12 @@ if (url.has("id")) {
         .then(function(data) {
             console.log(data);
             document.querySelector(".starship").innerHTML = data.name
+            data.results.forEach(function(result) {
+
+            });
 
         });
+
+
 
 }

@@ -35,9 +35,9 @@ fetch("https://swapi.dev/api/people")
 // vis / skjul lyssværdet 
 document.addEventListener("click", function() {
     let plasma = document.querySelector(".plasma");
-    if (plasma.style.display === "none") {
-        plasma.style.display = "block";
+    if (plasma.style.height === "0vw") {
+        plasma.style.height = "28vw";
     } else {
-        plasma.style.display = "none";
+        plasma.style.height = "0vw";
     }
 });
