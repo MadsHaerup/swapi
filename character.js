@@ -1,11 +1,13 @@
 let url = new URLSearchParams(window.location.search);
 //console.log(url);
+let deathstar = document.querySelector(".deathStar");
 if (url.has("id")) {
     //console.log(url.get("id"));
     fetch(`https://swapi.dev/api/people/${url.get("id")}`)
         .then(res => res.json())
         .then(function(data) {
             console.log(data);
+            deathstar.remove();
             document.querySelector(".name").innerText = data.name
             document.querySelector(".height").innerText = data.height
             document.querySelector(".gender").innerText = data.gender

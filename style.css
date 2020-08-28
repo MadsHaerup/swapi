@@ -67,5 +67,70 @@ li span {
     color: yellow;
 }
 
+.nextLink {
+    place-self: center;
+    grid-column: 3;
+}
+
+.prevLink {
+    place-self: center;
+    grid-column: 2;
+}
+
 
 /* ──────────────────────────────────────────────────────────────────────────────── */
+
+
+/* ───────────DEATH STAR───────────────────────────────────────────────────────────────────── */
+
+.deathStar {
+    left: 50px;
+    top: 20px;
+    background: #323232;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    overflow: hidden;
+    animation: spin 2s linear infinite;
+    place-self: center;
+    grid-column: 1/-1;
+}
+
+.deathStar:before {
+    content: "";
+    position: absolute;
+    background: #3b3b3b;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    left: 6px;
+    top: -6px;
+}
+
+.circle {
+    background: #212121;
+    position: relative;
+    top: 23px;
+    left: 80px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+.trait {
+    background: #212121;
+    position: relative;
+    top: 40px;
+    width: 100%;
+    height: 3px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
