@@ -5,7 +5,7 @@ let page = url.get("page") ? url.get("page") : 1;
 
 let prevPage, nextPage;
 
-let deathstar = document.querySelector(".deathStar");
+let bb8 = document.querySelector("#bb8");
 
 // ────────────────────────────────────────────────────────────────────────────────
 //referer til links som skal Bladre frem og tilbage i api'et
@@ -13,14 +13,15 @@ let nextLink = document.querySelector(".nextLink");
 nextLink.href = `?page=${parseInt(page)+1}`;
 
 let prevLink = document.querySelector(".prevLink");
-prevLink.href = `?page=${parseInt(page)-1}`;
+prevLink.href = `?page=${parseInt(page) - 1}`;
+
 
 fetch(`https://swapi.dev/api/people?page=${page}`)
     //omformatere til Json
     .then(res => res.json())
     //griber data'en og gør noget ved den
     .then(function(data) {
-        deathstar.remove();
+        bb8.remove();
         //console.log(data);
         //runder op til det næste hele tal
         //dividere objekterne med antal pr side
