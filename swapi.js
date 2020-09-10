@@ -87,4 +87,6 @@ document.querySelector("button").addEventListener("click", function() {
   } else {
     plasma.style.height = "0vw";
   }
+
 });
+console.log(".plasma");

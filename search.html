@@ -2,56 +2,57 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>swapi</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="buttonStyle.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>swapi</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="buttonStyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <main class="frontPage">
-        <h1 class="frontPage__headline">Star Wars</h1>
+  <main class="frontPage">
+    <h1 class="frontPage__headline">Star Wars</h1>
 
-        <form action="">
-            <input type="search" name="keyword">
-            <button type="submit">search</button>
-        </form>
+    <form action="">
+      <input type="search" name="keyword">
+      <button type="submit">search</button>
+    </form>
 
-        <div class="example-item">
-            <div class="lightsaber">
-                <button for="yoda-example"></button>
-                <div class="switch"></div>
-                <div class="plasma yoda"></div>
-            </div>
-        </div>
-        <ol id="starWarsList"></ol>
-        <div>
+    <div class="example-item">
+      <div class="lightsaber">
+        <button for="yoda-example"></button>
+        <div class="switch"></div>
+        <div class="plasma yoda"></div>
+      </div>
+    </div>
+    <ol id="starWarsList"></ol>
+    <div>
 
-        </div>
-
-
-        <div class="entry wide tall" id="bb8">
-            <div class="no-scale"></div>
-        </div>
+    </div>
 
 
-        <a href="" class="prevLink">previous</a>
-        <a href="" class="nextLink">next</a>
+    <div class="entry wide tall" id="bb8">
+      <div class="no-scale"></div>
+    </div>
+
+
+    <a href="" class="prevLink">previous</a>
+    <a href="" class="nextLink">next</a>
 
 
 
-    </main>
-    <!-- ──────────────────────────────────────────────────────────────────────────────── -->
+  </main>
+  <!-- ──────────────────────────────────────────────────────────────────────────────── -->
 
-    <template id="template">
+  <template id="template">
         <li><a href="" class="listItem"></a></li>
-        </template>
-    <script src="search.js" async defer></script>
+    </template>
+  <script src="search.js" async defer></script>
+
 </body>
 
 </html>

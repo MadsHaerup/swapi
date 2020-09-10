@@ -80,3 +80,8 @@
     box-shadow: 0 0 10px #7EC855;
   }
 }
+@media only screen and (min-width: 1600px) {
+  .plasma {
+    height: 25em;
+  }
+}
